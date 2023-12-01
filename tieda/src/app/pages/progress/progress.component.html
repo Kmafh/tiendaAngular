@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <div
+          class="progress-bar bg-primary active progress-bar-striped active rounded"
+          style="height: 15px"
+          [style.width]="getProgres1"
+          role="progressbar"
+        ></div>
+        <hr />
+        <div
+          class="progress-bar bg-warning active progress-bar-striped active rounded"
+          style="height: 15px"
+          [style.width]="getProgres2"
+          role="progressbar"
+        ></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <app-incrementator
+              btn="btn btn-primary"
+              (exitValue)="progres = $event"
+              [progres]="progres"
+            ></app-incrementator>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <app-incrementator
+              btn="btn btn-warning"
+              (exitValue)="progres2 = $event"
+              [progres]="progres2"
+            ></app-incrementator>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

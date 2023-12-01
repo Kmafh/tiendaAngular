@@ -1,0 +1,122 @@
+.pointer{
+    cursor:pointer
+}
+.black{
+    background-color: #242a33;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar1-collapse {
+    justify-content: center;
+  }
+  
+  .navbar1-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .navbar1-nav li {
+    margin: 0 10px; /* Espaciado entre elementos, ajusta según sea necesario */
+  }
+  
+  .navbar1-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Ajusta según sea necesario */
+    transition: color 0.3s;
+  }
+  
+  .navbar1-nav a:hover {
+    color: rgb(247, 169, 24) !important;
+  }
+
+  .largo{
+    width: 450%;
+    display: block;
+  }
+
+  .mobile-hidden {
+    display: block; /* O el valor que desees por defecto en pantallas no móviles */
+  }
+  
+  /* Oculta el div en dispositivos con un ancho de pantalla menor o igual a 767px (puedes ajustar este valor según tus necesidades) */
+  @media (max-width: 767px) {
+    .largo {
+      display: none;
+    }
+    .mobile-hidden {
+        display: none;
+      }
+  }
+
+  /* Estilos generales */
+.navbar2 {
+    background-color: #242a33;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar2-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Mover justify-content aquí */
+  }
+  
+  .navbar2-nav li {
+    margin: 0 10px;
+    position: relative;
+    list-style-type: none; /* Quitar el marcador de lista */
+    margin-left: 0; /* Asegurar que no haya margen a la izquierda */
+  }
+  
+  .navbar2-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s;
+    display: block;
+  }
+  
+  .navbar2-nav a:hover {
+    color: rgb(247, 169, 24) !important;
+  }
+  
+  /* Estilos para el submenú */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-left: 0;
+
+    background-color: #242a33; /* Cambia el color del submenú según sea necesario */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar2-nav li:hover .submenu {
+    display: block;
+    margin-left: 0;
+
+  }
+  
+  .submenu li {
+    margin: 0;
+    list-style-type: none; /* Quitar el marcador de lista */
+    margin-left: 0; /* Asegurar que no haya margen a la izquierda */
+  }
+  
+  .submenu a {
+    margin-left: 0;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .submenu a:hover {
+    margin-left: 0;
+
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
