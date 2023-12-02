@@ -1,0 +1,103 @@
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-sm-12">Categoría</label>
+                <div class="col-sm-12">
+                  <select class="form-control form-control-line">
+                    <option>London</option>
+                    <option>India</option>
+                    <option>Usa</option>
+                    <option>Canada</option>
+                    <option>Thailand</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-sm-12">Provincia</label>
+                <div class="col-sm-12">
+                  <select class="form-control form-control-line">
+                    <option>London</option>
+                    <option>India</option>
+                    <option>Usa</option>
+                    <option>Canada</option>
+                    <option>Thailand</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-sm-12">Precio Max</label>
+                <div class="col-sm-12">
+                  <select class="form-control form-control-line">
+                    <option>London</option>
+                    <option>India</option>
+                    <option>Usa</option>
+                    <option>Canada</option>
+                    <option>Thailand</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="form-group">
+                <label class="col-sm-12">Precio min</label>
+                <div class="col-sm-12">
+                  <select class="form-control form-control-line">
+                    <option>London</option>
+                    <option>India</option>
+                    <option>Usa</option>
+                    <option>Canada</option>
+                    <option>Thailand</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 scrollable" scrollable  *ngFor="let item of displayedItems">
+        <div  class="row">
+          <div class="col-lg-12">
+              
+              <div class="card rounded" >
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../../../assets/images/background/login-register.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../../../assets/images/background/error-bg.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../../../assets/images/background/megamenubg.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{item.price | currency : 'EUR'}}</h5>
+                  <p class="card-text">{{item.title}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+    </div>
+  </div>
+  

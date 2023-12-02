@@ -6,9 +6,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { NotfoundpageComponent } from './pages/notfoundpage/notfoundpage.component';
 import { PagesComponent } from './pages/pages.component';
 import { ProgressComponent } from './pages/progress/progress.component';
-import { GraficaComponent } from './pages/grafica/grafica.component';
 import { AccountSettingComponent } from './pages/account-setting/account-setting.component';
-import { RxjsComponent } from './pages/rxjs/rxjs.component';
 import { AuthGuard } from './guards/auth.guard';
 import { ProfileComponent } from './pages/profile/profile.component';
 
@@ -16,15 +14,12 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: PagesComponent,
-    canActivate: [AuthGuard],
+    //canActivate: [AuthGuard],
     children: [
       { path: '', component: DashboardComponent,data:{title:'Dashboard'} },
-      { path: 'progress', component: ProgressComponent,data:{title:'Barras Progreso'} },
-      { path: 'graphic', component: GraficaComponent,data:{title:'Gráfica'} },
+      { path: 'productos', component: ProgressComponent,data:{title:'Barras Progreso'} },
       { path: 'account', component: AccountSettingComponent,data:{title:'Ajustes de cuenta'} },
-      { path: 'rxjs', component: RxjsComponent,data:{title:':RXJS:'} },
       { path: 'profile', component: ProfileComponent,data:{title:'Perfil'} }
-
     ],
   },
   { path: '', redirectTo: "/dashboard", pathMatch: 'full'},

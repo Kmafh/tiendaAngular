@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from 'src/app/models/usuario';
-import { UsuarioService } from 'src/app/services/usuario.service';
+import { UsuarioService } from 'src/app/services/usuarios/usuarios.service';
 
 @Component({
   selector: 'app-header',
@@ -13,9 +13,8 @@ public imgUrl = '';
  userLogin : Usuario
   constructor(private userService: UsuarioService, private router: Router){
     
-    this.userLogin = userService.userLogin,
-    console.log("User: "+this.userLogin.nombre)
-    this.imgUrl = this.userLogin.getImg
+    this.userLogin = userService.user,
+    this.imgUrl = this.userLogin?this.userLogin.getImgUrl:"";
   }
 
   logout() {

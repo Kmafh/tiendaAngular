@@ -5692,15 +5692,10 @@ File: scss
  Small Desktop & above all (1024px) 
  ============================================================== */
 @media (min-width: 1024px) {
-  .page-wrapper {
-    margin-left: 240px; } }
+   }
 
 @media (max-width: 1023px) {
-  .page-wrapper {
-    margin-left: 70px;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-    transition: 0.2s ease-in; }
+  
   .widget-app-columns {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -5745,8 +5740,7 @@ File: scss
     padding: 15px;
     display: inline-block;
     line-height: 40px; }
-  .mini-sidebar .page-wrapper {
-    margin-left: 70px; }
+  
   .flex-wrap {
     -ms-flex-wrap: nowrap !important;
     flex-wrap: nowrap !important;

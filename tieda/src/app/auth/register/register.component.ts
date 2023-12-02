@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UsuarioService } from 'src/app/services/usuario.service';
+import { UsuarioService } from 'src/app/services/usuarios/usuarios.service';
 import Swal from 'sweetalert2';
 
 @Component({

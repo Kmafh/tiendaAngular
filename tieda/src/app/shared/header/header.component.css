@@ -32,7 +32,7 @@
   }
 
   .largo{
-    width: 450%;
+    width: 550%;
     display: block;
   }
 
@@ -48,6 +48,16 @@
     .mobile-hidden {
         display: none;
       }
+  }
+  @media (max-width: 1500px) {
+    .largo {
+      width: 350%;
+    }
+  }
+  @media (max-width: 1071px) {
+    .largo {
+      width: 230%;
+    }
   }
 
   /* Estilos generales */
